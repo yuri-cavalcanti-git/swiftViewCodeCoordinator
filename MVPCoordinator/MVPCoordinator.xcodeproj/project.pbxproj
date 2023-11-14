@@ -18,7 +18,18 @@
 		DAE020282B0413B400459943 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020272B0413B400459943 /* HomeViewController.swift */; };
 		DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020292B04140600459943 /* HomePresenter.swift */; };
 		DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0202B2B04143500459943 /* HomeProtocols.swift */; };
+		DAE020342B0415BA00459943 /* MVPCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAE020352B0415BA00459943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAE01FFF2B0408F300459943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE020062B0408F300459943;
+			remoteInfo = MVPCoordinator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DAE020072B0408F300459943 /* MVPCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +45,19 @@
 		DAE020272B0413B400459943 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAE020292B04140600459943 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DAE0202B2B04143500459943 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		DAE020312B0415BA00459943 /* MVPCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DAE020042B0408F300459943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE0202E2B0415BA00459943 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE020092B0408F300459943 /* MVPCoordinator */,
+				DAE020322B0415BA00459943 /* MVPCoordinatorTests */,
 				DAE020082B0408F300459943 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE020072B0408F300459943 /* MVPCoordinator.app */,
+				DAE020312B0415BA00459943 /* MVPCoordinatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +129,14 @@
 			path = "../New Group/Views";
 			sourceTree = "<group>";
 		};
+		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */,
+			);
+			path = MVPCoordinatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +157,24 @@
 			productReference = DAE020072B0408F300459943 /* MVPCoordinator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DAE020302B0415BA00459943 /* MVPCoordinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE020372B0415BA00459943 /* Build configuration list for PBXNativeTarget "MVPCoordinatorTests" */;
+			buildPhases = (
+				DAE0202D2B0415BA00459943 /* Sources */,
+				DAE0202E2B0415BA00459943 /* Frameworks */,
+				DAE0202F2B0415BA00459943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAE020362B0415BA00459943 /* PBXTargetDependency */,
+			);
+			name = MVPCoordinatorTests;
+			productName = MVPCoordinatorTests;
+			productReference = DAE020312B0415BA00459943 /* MVPCoordinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -139,6 +187,10 @@
 				TargetAttributes = {
 					DAE020062B0408F300459943 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					DAE020302B0415BA00459943 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DAE020062B0408F300459943;
 					};
 				};
 			};
@@ -156,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				DAE020062B0408F300459943 /* MVPCoordinator */,
+				DAE020302B0415BA00459943 /* MVPCoordinatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +220,13 @@
 			files = (
 				DAE020172B0408F600459943 /* LaunchScreen.storyboard in Resources */,
 				DAE020142B0408F600459943 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE0202F2B0415BA00459943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +249,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAE0202D2B0415BA00459943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE020342B0415BA00459943 /* MVPCoordinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAE020362B0415BA00459943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE020062B0408F300459943 /* MVPCoordinator */;
+			targetProxy = DAE020352B0415BA00459943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DAE020152B0408F600459943 /* LaunchScreen.storyboard */ = {
@@ -369,6 +445,40 @@
 			};
 			name = Release;
 		};
+		DAE020382B0415BA00459943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aycc.com.MVPCoordinatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPCoordinator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVPCoordinator";
+			};
+			name = Debug;
+		};
+		DAE020392B0415BA00459943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aycc.com.MVPCoordinatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPCoordinator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVPCoordinator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +496,15 @@
 			buildConfigurations = (
 				DAE0201C2B0408F600459943 /* Debug */,
 				DAE0201D2B0408F600459943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE020372B0415BA00459943 /* Build configuration list for PBXNativeTarget "MVPCoordinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE020382B0415BA00459943 /* Debug */,
+				DAE020392B0415BA00459943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
