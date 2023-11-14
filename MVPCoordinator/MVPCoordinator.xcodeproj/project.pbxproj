@@ -18,7 +18,19 @@
 		DAE020282B0413B400459943 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020272B0413B400459943 /* HomeViewController.swift */; };
 		DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020292B04140600459943 /* HomePresenter.swift */; };
 		DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0202B2B04143500459943 /* HomeProtocols.swift */; };
-		DAE020342B0415BA00459943 /* MVPCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */; };
+		DAE020842B042E8000459943 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = DAE020832B042E8000459943 /* Quick */; };
+		DAE020872B042EA100459943 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = DAE020862B042EA100459943 /* Nimble */; };
+		DAE0208C2B042FBA00459943 /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0208B2B042FBA00459943 /* UINavigationControllerMock.swift */; };
+		DAE0208E2B042FF900459943 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0208D2B042FF900459943 /* ViewControllerMock.swift */; };
+		DAE020902B04302500459943 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0208F2B04302500459943 /* MainCoordinatorTests.swift */; };
+		DAE020922B04318500459943 /* HomeViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020912B04318500459943 /* HomeViewControllerSpy.swift */; };
+		DAE020942B0431F500459943 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020932B0431F500459943 /* HomePresenterTests.swift */; };
+		DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020952B0432C000459943 /* HomeViewControllerTests.swift */; };
+		DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020972B04335F00459943 /* HomeViewSpy.swift */; };
+		DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020992B0433E500459943 /* HomePresenterSpy.swift */; };
+		DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */; };
+		DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0209F2B04366100459943 /* HomeViewTets.swift */; };
+		DAE020A32B0436DD00459943 /* Nimble-Snapshots in Frameworks */ = {isa = PBXBuildFile; productRef = DAE020A22B0436DD00459943 /* Nimble-Snapshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +58,16 @@
 		DAE020292B04140600459943 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DAE0202B2B04143500459943 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		DAE020312B0415BA00459943 /* MVPCoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCoordinatorTests.swift; sourceTree = "<group>"; };
+		DAE0208B2B042FBA00459943 /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
+		DAE0208D2B042FF900459943 /* ViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
+		DAE0208F2B04302500459943 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
+		DAE020912B04318500459943 /* HomeViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpy.swift; sourceTree = "<group>"; };
+		DAE020932B0431F500459943 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		DAE020952B0432C000459943 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		DAE020972B04335F00459943 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
+		DAE020992B0433E500459943 /* HomePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterSpy.swift; sourceTree = "<group>"; };
+		DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
+		DAE0209F2B04366100459943 /* HomeViewTets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE020842B042E8000459943 /* Quick in Frameworks */,
+				DAE020872B042EA100459943 /* Nimble in Frameworks */,
+				DAE020A32B0436DD00459943 /* Nimble-Snapshots in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,9 +156,51 @@
 		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAE020332B0415BA00459943 /* MVPCoordinatorTests.swift */,
+				DAE0209E2B0435F900459943 /* Views */,
+				DAE0209D2B0435E200459943 /* Coordinator */,
+				DAE020882B042F5800459943 /* Doubles */,
+				DAE020932B0431F500459943 /* HomePresenterTests.swift */,
+				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
 			);
 			path = MVPCoordinatorTests;
+			sourceTree = "<group>";
+		};
+		DAE020882B042F5800459943 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				DAE020892B042F7D00459943 /* Helpers */,
+				DAE020912B04318500459943 /* HomeViewControllerSpy.swift */,
+				DAE020972B04335F00459943 /* HomeViewSpy.swift */,
+				DAE020992B0433E500459943 /* HomePresenterSpy.swift */,
+				DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		DAE020892B042F7D00459943 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0208B2B042FBA00459943 /* UINavigationControllerMock.swift */,
+				DAE0208D2B042FF900459943 /* ViewControllerMock.swift */,
+			);
+			name = Helpers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DAE0209D2B0435E200459943 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0208F2B04302500459943 /* MainCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DAE0209E2B0435F900459943 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0209F2B04366100459943 /* HomeViewTets.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +219,8 @@
 			dependencies = (
 			);
 			name = MVPCoordinator;
+			packageProductDependencies = (
+			);
 			productName = MVPCoordinator;
 			productReference = DAE020072B0408F300459943 /* MVPCoordinator.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +239,11 @@
 				DAE020362B0415BA00459943 /* PBXTargetDependency */,
 			);
 			name = MVPCoordinatorTests;
+			packageProductDependencies = (
+				DAE020832B042E8000459943 /* Quick */,
+				DAE020862B042EA100459943 /* Nimble */,
+				DAE020A22B0436DD00459943 /* Nimble-Snapshots */,
+			);
 			productName = MVPCoordinatorTests;
 			productReference = DAE020312B0415BA00459943 /* MVPCoordinatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -203,6 +276,11 @@
 				Base,
 			);
 			mainGroup = DAE01FFE2B0408F300459943;
+			packageReferences = (
+				DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */,
+				DAE020852B042EA100459943 /* XCRemoteSwiftPackageReference "Nimble" */,
+				DAE020A12B0436DD00459943 /* XCRemoteSwiftPackageReference "Nimble-Snapshots" */,
+			);
 			productRefGroup = DAE020082B0408F300459943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,7 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE020342B0415BA00459943 /* MVPCoordinatorTests.swift in Sources */,
+				DAE0208C2B042FBA00459943 /* UINavigationControllerMock.swift in Sources */,
+				DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */,
+				DAE020902B04302500459943 /* MainCoordinatorTests.swift in Sources */,
+				DAE020922B04318500459943 /* HomeViewControllerSpy.swift in Sources */,
+				DAE0208E2B042FF900459943 /* ViewControllerMock.swift in Sources */,
+				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,
+				DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */,
+				DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */,
+				DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */,
+				DAE020942B0431F500459943 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +597,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		DAE020852B042EA100459943 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		DAE020A12B0436DD00459943 /* XCRemoteSwiftPackageReference "Nimble-Snapshots" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashfurrow/Nimble-Snapshots";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAE020832B042E8000459943 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		DAE020862B042EA100459943 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAE020852B042EA100459943 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		DAE020A22B0436DD00459943 /* Nimble-Snapshots */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAE020A12B0436DD00459943 /* XCRemoteSwiftPackageReference "Nimble-Snapshots" */;
+			productName = "Nimble-Snapshots";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAE01FFF2B0408F300459943 /* Project object */;
 }
