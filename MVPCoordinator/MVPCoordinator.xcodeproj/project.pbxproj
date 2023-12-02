@@ -12,6 +12,14 @@
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
 		DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB4B2B1BA38100734FE2 /* SettingsPresenter.swift */; };
 		DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB4E2B1BA3AE00734FE2 /* SettingsView.swift */; };
+		DA4CBB532B1BE95200734FE2 /* SettingsViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB522B1BE95200734FE2 /* SettingsViewControllerSpy.swift */; };
+		DA4CBB552B1BE97000734FE2 /* SettingsPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB542B1BE97000734FE2 /* SettingsPresenterSpy.swift */; };
+		DA4CBB572B1BE98900734FE2 /* SettingsViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB562B1BE98900734FE2 /* SettingsViewSpy.swift */; };
+		DA4CBB592B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB582B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift */; };
+		DA4CBB5C2B1BEAF300734FE2 /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB5B2B1BEAF300734FE2 /* SettingsViewTests.swift */; };
+		DA7EE6CD2B1BEF85007A1121 /* Mirror+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6CC2B1BEF85007A1121 /* Mirror+Ext.swift */; };
+		DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */; };
+		DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */; };
 		DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200A2B0408F300459943 /* AppDelegate.swift */; };
 		DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200C2B0408F300459943 /* SceneDelegate.swift */; };
 		DAE0200F2B0408F300459943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200E2B0408F300459943 /* ViewController.swift */; };
@@ -54,6 +62,14 @@
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA4CBB4B2B1BA38100734FE2 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		DA4CBB4E2B1BA3AE00734FE2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DA4CBB522B1BE95200734FE2 /* SettingsViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerSpy.swift; sourceTree = "<group>"; };
+		DA4CBB542B1BE97000734FE2 /* SettingsPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterSpy.swift; sourceTree = "<group>"; };
+		DA4CBB562B1BE98900734FE2 /* SettingsViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewSpy.swift; sourceTree = "<group>"; };
+		DA4CBB582B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
+		DA4CBB5B2B1BEAF300734FE2 /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
+		DA7EE6CC2B1BEF85007A1121 /* Mirror+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+Ext.swift"; sourceTree = "<group>"; };
+		DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
+		DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		DAE020072B0408F300459943 /* MVPCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE0200A2B0408F300459943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE0200C2B0408F300459943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +169,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA4CBB502B1BE8FF00734FE2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBB5A2B1BEAD000734FE2 /* Views */,
+				DA4CBB512B1BE90D00734FE2 /* Doubles */,
+				DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */,
+				DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DA4CBB512B1BE90D00734FE2 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBB522B1BE95200734FE2 /* SettingsViewControllerSpy.swift */,
+				DA4CBB542B1BE97000734FE2 /* SettingsPresenterSpy.swift */,
+				DA4CBB562B1BE98900734FE2 /* SettingsViewSpy.swift */,
+				DA4CBB582B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		DA4CBB5A2B1BEAD000734FE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBB5B2B1BEAF300734FE2 /* SettingsViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DAE01FFE2B0408F300459943 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +262,7 @@
 		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA4CBB502B1BE8FF00734FE2 /* Settings */,
 				DA4CBB442B1BA2D800734FE2 /* Home */,
 				DAE0209D2B0435E200459943 /* Coordinator */,
 				DAE020882B042F5800459943 /* Doubles */,
@@ -236,6 +283,7 @@
 			children = (
 				DAE0208B2B042FBA00459943 /* UINavigationControllerMock.swift */,
 				DAE0208D2B042FF900459943 /* ViewControllerMock.swift */,
+				DA7EE6CC2B1BEF85007A1121 /* Mirror+Ext.swift */,
 			);
 			name = Helpers;
 			path = "New Group";
@@ -392,12 +440,20 @@
 			files = (
 				DAE0208C2B042FBA00459943 /* UINavigationControllerMock.swift in Sources */,
 				DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */,
+				DA7EE6CD2B1BEF85007A1121 /* Mirror+Ext.swift in Sources */,
 				DAE020902B04302500459943 /* MainCoordinatorTests.swift in Sources */,
 				DAE020922B04318500459943 /* HomeViewControllerSpy.swift in Sources */,
+				DA4CBB572B1BE98900734FE2 /* SettingsViewSpy.swift in Sources */,
 				DAE0208E2B042FF900459943 /* ViewControllerMock.swift in Sources */,
+				DA4CBB532B1BE95200734FE2 /* SettingsViewControllerSpy.swift in Sources */,
+				DA4CBB552B1BE97000734FE2 /* SettingsPresenterSpy.swift in Sources */,
 				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,
+				DA4CBB592B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift in Sources */,
 				DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */,
+				DA4CBB5C2B1BEAF300734FE2 /* SettingsViewTests.swift in Sources */,
+				DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */,
 				DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */,
+				DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */,
 				DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */,
 				DAE020942B0431F500459943 /* HomePresenterTests.swift in Sources */,
 			);

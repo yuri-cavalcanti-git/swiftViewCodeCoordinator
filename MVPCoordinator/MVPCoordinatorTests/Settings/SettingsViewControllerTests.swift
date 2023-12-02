@@ -4,19 +4,19 @@ import Nimble
 
 @testable import MVPCoordinator
 
-final class HomeViewControllerTests: QuickSpec {
+final class SettingsViewControllerTests: QuickSpec {
     override func spec() {
-        var sut: HomeViewController!
-        var view: HomeViewSpy!
-        var presenter: HomePresenterSpy!
-        var delegate: HomeViewControllerDelegateSpy!
+        var sut: SettingsViewController!
+        var view: SettingsViewSpy!
+        var presenter: SettingsPresenterSpy!
+        var delegate: SettingsViewControllerDelegateSpy!
 
         beforeEach {
-            view = HomeViewSpy()
-            presenter = HomePresenterSpy()
-            delegate = HomeViewControllerDelegateSpy()
-            sut = HomeViewController(contentView: view,
-                                     presenter: presenter)
+            view = SettingsViewSpy()
+            presenter = SettingsPresenterSpy()
+            delegate = SettingsViewControllerDelegateSpy()
+            sut = SettingsViewController(contentView: view,
+                                         presenter: presenter)
             sut.delegate = delegate
             _ = sut.view
         }
@@ -49,23 +49,11 @@ final class HomeViewControllerTests: QuickSpec {
         
         describe("show") {
             beforeEach {
-                sut.show(text: "Hello")
+                sut.show()
             }
             
             it("calls view`s show"){
-                expect(view.showParam) == ["Hello"]
-            }
-        }
-        
-        describe("settingsButton") {
-            beforeEach {
-                sut.viewWillAppear(false)
-                let barButtonItem = sut.navigationItem.rightBarButtonItem!
-                _ = barButtonItem.target?.perform(barButtonItem.action)
-            }
-
-            it("calls delegate`s openSettings") {
-                expect(delegate.openSettingsCount) == 1
+                expect(view.showCount) == 1
             }
         }
     }

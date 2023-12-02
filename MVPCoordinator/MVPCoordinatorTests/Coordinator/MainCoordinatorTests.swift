@@ -27,6 +27,18 @@ final class MainCoordinatorTests: QuickSpec {
             
             it("pushes HomeViewController") {
                 expect(sut.currentViewController).to(beAKindOf(HomeViewController.self))
+                expect(navigationControllerMock.currentPushedViewController).to(beAKindOf(HomeViewController.self))
+            }
+        }
+        
+        describe("#openSettings") {
+            beforeEach {
+                sut.openSettings()
+            }
+            
+            it("pushes SettingsViewController") {
+                expect(sut.currentViewController).to(beAKindOf(SettingsViewController.self))
+                expect(navigationControllerMock.currentPushedViewController).to(beAKindOf(SettingsViewController.self))
             }
         }
     }
