@@ -4,7 +4,7 @@ import Nimble
 
 @testable import MVPCoordinator
 
-final class DetailViewControllerTests: QuickSpec {
+final class HomeViewControllerTests: QuickSpec {
     override func spec() {
         var sut: HomeViewController!
         var view: HomeViewSpy!
@@ -34,15 +34,16 @@ final class DetailViewControllerTests: QuickSpec {
         }
         
         describe("#viewWillAppear") {
-            var navigation: UINavigationController!
+            var navigation: UINavigationControllerMock!
             
             beforeEach {
-                navigation = UINavigationController(rootViewController: sut)
+                navigation = UINavigationControllerMock(rootViewController: sut)
                 sut.viewWillAppear(false)
             }
+
             it("setups navigation bar correctly") {
-                expect(navigation.title) == ""
-                expect(navigation.navigationBar.tintColor) == .black
+                expect(navigation.title) == "MVPCoordinator"
+                expect(navigation.navigationBar.tintColor) == .cyan
             }
         }
         

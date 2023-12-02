@@ -28,7 +28,28 @@ class HomeViewController: UIViewController {
         bindLayoutEvents()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "MVPCoordinator"
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .purple
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        addBarButton()
+    }
+    
     private func bindLayoutEvents() {
+    }
+    
+    private func addBarButton() {
+        let barButton = UIBarButtonItem(image: UIImage(systemName: "gear"),
+                                        style: .plain,
+                                        target: self,
+                                        action: #selector (openSettings))
+        navigationItem.rightBarButtonItem = barButton
+    }
+    
+    @objc
+    private func openSettings() {
+        delegate?.openSettings()
     }
 }
 

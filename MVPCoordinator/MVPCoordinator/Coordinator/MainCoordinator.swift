@@ -7,13 +7,19 @@ public enum Flows {
 public final class MainCoordinator: Coordinator {
     
     public var navigationController: UINavigationController
-    public var currentViewController: UIViewController? { navigationController.visibleViewController }
+//    public var currentViewController: UIViewController? { navigationController.visibleViewController }
+    public var currentViewController: UIViewController? {
+        return navigationController.topViewController
+    }
+
+    private let controllerFactory: CoordinatorFactory
     
     private let flow: Flows
     
     public init(navigationController: UINavigationController,
                 flow: Flows) {
         self.navigationController = navigationController
+        self.controllerFactory = CoordinatorFactory()
         self.flow = flow
     }
 
@@ -26,15 +32,20 @@ public final class MainCoordinator: Coordinator {
     }
     
     private func createHomeViewController() -> HomeViewController {
-        let contentView = HomeView()
-        let presenter = HomePresenter(text: "Hello")
-        let controller = HomeViewController(contentView: contentView,
-                                            presenter: presenter)
-        presenter.controller = controller
+        let controller = controllerFactory.buildHome()
         controller.delegate = self
         return controller
     }
 }
 
 extension MainCoordinator: HomeViewControllerDelegate {
+    func openSettings() {
+        let controller = controllerFactory.buildSettings()
+        controller.delegate = self
+        navigationController.pushViewController(controller, animated: true)
+    }
+}
+
+extension MainCoordinator: SettingsViewControllerDelegate {
+    
 }

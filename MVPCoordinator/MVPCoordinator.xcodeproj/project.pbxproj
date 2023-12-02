@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
+		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
+		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
+		DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB4B2B1BA38100734FE2 /* SettingsPresenter.swift */; };
+		DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB4E2B1BA3AE00734FE2 /* SettingsView.swift */; };
 		DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200A2B0408F300459943 /* AppDelegate.swift */; };
 		DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200C2B0408F300459943 /* SceneDelegate.swift */; };
 		DAE0200F2B0408F300459943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200E2B0408F300459943 /* ViewController.swift */; };
@@ -44,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DA4CBB4B2B1BA38100734FE2 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		DA4CBB4E2B1BA3AE00734FE2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DAE020072B0408F300459943 /* MVPCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE0200A2B0408F300459943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE0200C2B0408F300459943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +101,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4CBB432B1BA2B600734FE2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0202B2B04143500459943 /* HomeProtocols.swift */,
+				DAE020292B04140600459943 /* HomePresenter.swift */,
+				DAE020272B0413B400459943 /* HomeViewController.swift */,
+				DAE020242B04136600459943 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA4CBB442B1BA2D800734FE2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0209E2B0435F900459943 /* Views */,
+				DA4CBB452B1BA2F700734FE2 /* Doubles */,
+				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
+				DAE020932B0431F500459943 /* HomePresenterTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA4CBB452B1BA2F700734FE2 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */,
+				DAE020992B0433E500459943 /* HomePresenterSpy.swift */,
+				DAE020972B04335F00459943 /* HomeViewSpy.swift */,
+				DAE020912B04318500459943 /* HomeViewControllerSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		DA4CBB462B1BA34700734FE2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBB4D2B1BA38B00734FE2 /* Views */,
+				DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */,
+				DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */,
+				DA4CBB4B2B1BA38100734FE2 /* SettingsPresenter.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DA4CBB4D2B1BA38B00734FE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBB4E2B1BA3AE00734FE2 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DAE01FFE2B0408F300459943 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +191,7 @@
 			children = (
 				DAE0201F2B0412CD00459943 /* MainCoordinator.swift */,
 				DAE020212B0412EE00459943 /* CoordinatorProtocols.swift */,
+				DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -136,10 +199,8 @@
 		DAE020232B04133E00459943 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DAE020242B04136600459943 /* Views */,
-				DAE020272B0413B400459943 /* HomeViewController.swift */,
-				DAE020292B04140600459943 /* HomePresenter.swift */,
-				DAE0202B2B04143500459943 /* HomeProtocols.swift */,
+				DA4CBB462B1BA34700734FE2 /* Settings */,
+				DA4CBB432B1BA2B600734FE2 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -149,18 +210,15 @@
 			children = (
 				DAE020252B04139000459943 /* HomeView.swift */,
 			);
-			name = Views;
-			path = "../New Group/Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAE0209E2B0435F900459943 /* Views */,
+				DA4CBB442B1BA2D800734FE2 /* Home */,
 				DAE0209D2B0435E200459943 /* Coordinator */,
 				DAE020882B042F5800459943 /* Doubles */,
-				DAE020932B0431F500459943 /* HomePresenterTests.swift */,
-				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
 			);
 			path = MVPCoordinatorTests;
 			sourceTree = "<group>";
@@ -169,10 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				DAE020892B042F7D00459943 /* Helpers */,
-				DAE020912B04318500459943 /* HomeViewControllerSpy.swift */,
-				DAE020972B04335F00459943 /* HomeViewSpy.swift */,
-				DAE020992B0433E500459943 /* HomePresenterSpy.swift */,
-				DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -320,10 +374,15 @@
 				DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */,
 				DAE020262B04139000459943 /* HomeView.swift in Sources */,
 				DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */,
+				DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */,
 				DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */,
+				DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */,
+				DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */,
 				DAE020282B0413B400459943 /* HomeViewController.swift in Sources */,
 				DAE020222B0412EE00459943 /* CoordinatorProtocols.swift in Sources */,
 				DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */,
+				DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */,
+				DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

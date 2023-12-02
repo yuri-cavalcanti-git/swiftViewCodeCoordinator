@@ -11,4 +11,6 @@ protocol HomePresenterType {
     func load()
 }
 
-protocol HomeViewControllerDelegate: AnyObject {}
+protocol HomeViewControllerDelegate: AnyObject {
+    func openSettings()
+}
