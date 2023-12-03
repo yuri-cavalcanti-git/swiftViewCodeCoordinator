@@ -42,7 +42,7 @@ final class HomeViewControllerTests: QuickSpec {
             }
 
             it("setups navigation bar correctly") {
-                expect(navigation.title) == "MVPCoordinator"
+                expect(navigation.title) == "Home"
                 expect(navigation.navigationBar.tintColor) == .cyan
             }
         }

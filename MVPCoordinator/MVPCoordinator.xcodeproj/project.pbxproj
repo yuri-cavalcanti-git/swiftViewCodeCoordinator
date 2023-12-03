@@ -20,6 +20,7 @@
 		DA7EE6CD2B1BEF85007A1121 /* Mirror+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6CC2B1BEF85007A1121 /* Mirror+Ext.swift */; };
 		DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */; };
 		DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */; };
+		DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */; };
 		DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200A2B0408F300459943 /* AppDelegate.swift */; };
 		DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200C2B0408F300459943 /* SceneDelegate.swift */; };
 		DAE0200F2B0408F300459943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200E2B0408F300459943 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		DA7EE6CC2B1BEF85007A1121 /* Mirror+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+Ext.swift"; sourceTree = "<group>"; };
 		DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
+		DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		DAE020072B0408F300459943 /* MVPCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE0200A2B0408F300459943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE0200C2B0408F300459943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA7EE6D22B1BF6B9007A1121 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DAE01FFE2B0408F300459943 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +230,7 @@
 		DAE020092B0408F300459943 /* MVPCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EE6D22B1BF6B9007A1121 /* Helpers */,
 				DAE020232B04133E00459943 /* Scenes */,
 				DAE0201E2B04129500459943 /* Coordinator */,
 				DAE0200A2B0408F300459943 /* AppDelegate.swift */,
@@ -419,6 +430,7 @@
 			files = (
 				DAE0200F2B0408F300459943 /* ViewController.swift in Sources */,
 				DAE020202B0412CD00459943 /* MainCoordinator.swift in Sources */,
+				DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */,
 				DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */,
 				DAE020262B04139000459943 /* HomeView.swift in Sources */,
 				DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */,

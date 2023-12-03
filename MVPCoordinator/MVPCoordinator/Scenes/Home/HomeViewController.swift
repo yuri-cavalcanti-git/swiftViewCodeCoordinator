@@ -29,10 +29,11 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "MVPCoordinator"
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .purple
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        setupNavBar(title: "Home",
+                    backgroundColor: .cyan,
+                    titleColor: .white,
+                    tintColor: .black)
+        
         addBarButton()
     }
     
