@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNavBar(title: "Home",
-                    backgroundColor: .cyan,
+                    backgroundColor: .purple,
                     titleColor: .white,
                     tintColor: .black)
         

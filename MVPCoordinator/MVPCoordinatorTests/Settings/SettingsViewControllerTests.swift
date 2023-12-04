@@ -42,8 +42,9 @@ final class SettingsViewControllerTests: QuickSpec {
             }
 
             it("setups navigation bar correctly") {
-                expect(navigation.title) == "MVPCoordinator"
-                expect(navigation.navigationBar.tintColor) == .cyan
+                expect(navigation.title) == "Settings"
+                expect(navigation.navigationBar.tintColor) == .black
+                expect(navigation.navigationBar.barTintColor) == .purple
             }
         }
         

@@ -29,10 +29,10 @@ class SettingsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "Settings"
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .purple
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        setupNavBar(title: "Settings",
+                    backgroundColor: .purple,
+                    titleColor: .white,
+                    tintColor: .black)
     }
     
     private func bindLayoutEvents() {

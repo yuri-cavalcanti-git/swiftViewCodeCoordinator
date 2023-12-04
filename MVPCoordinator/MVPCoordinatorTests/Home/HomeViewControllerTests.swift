@@ -43,7 +43,8 @@ final class HomeViewControllerTests: QuickSpec {
 
             it("setups navigation bar correctly") {
                 expect(navigation.title) == "Home"
-                expect(navigation.navigationBar.tintColor) == .cyan
+                expect(navigation.navigationBar.tintColor) == .black
+                expect(navigation.navigationBar.barTintColor) == .purple
             }
         }
         
