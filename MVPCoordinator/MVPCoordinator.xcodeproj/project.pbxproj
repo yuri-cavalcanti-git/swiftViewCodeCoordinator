@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA457FD72B1F69C1002D7982 /* JokeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FD62B1F69C1002D7982 /* JokeRepositoryType.swift */; };
+		DA457FD92B1F6B16002D7982 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FD82B1F6B16002D7982 /* JokeRepository.swift */; };
+		DA457FDF2B1F790B002D7982 /* NetworkProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FDE2B1F790B002D7982 /* NetworkProtocolMock.swift */; };
+		DA457FE12B1FA28E002D7982 /* JokeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE02B1FA28E002D7982 /* JokeRepositoryTests.swift */; };
+		DA457FE42B1FACBF002D7982 /* JokesResponse+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE32B1FACBF002D7982 /* JokesResponse+Stub.swift */; };
+		DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */; };
+		DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */; };
 		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
 		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
@@ -21,6 +28,12 @@
 		DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */; };
 		DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */; };
 		DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */; };
+		DA7EE6D72B1E6903007A1121 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D62B1E6903007A1121 /* NetworkProtocols.swift */; };
+		DA7EE6D92B1E6A7C007A1121 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6D82B1E6A7C007A1121 /* HttpMethod.swift */; };
+		DA7EE6DB2B1E6BCD007A1121 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6DA2B1E6BCD007A1121 /* NetworkManager.swift */; };
+		DA7EE6DD2B1F625A007A1121 /* JokesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6DC2B1F625A007A1121 /* JokesResponse.swift */; };
+		DA7EE6E32B1F63FC007A1121 /* GetJokesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6E22B1F63FB007A1121 /* GetJokesService.swift */; };
+		DA7EE6E52B1F6543007A1121 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE6E42B1F6543007A1121 /* Constants.swift */; };
 		DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200A2B0408F300459943 /* AppDelegate.swift */; };
 		DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200C2B0408F300459943 /* SceneDelegate.swift */; };
 		DAE0200F2B0408F300459943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0200E2B0408F300459943 /* ViewController.swift */; };
@@ -58,6 +71,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA457FD62B1F69C1002D7982 /* JokeRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryType.swift; sourceTree = "<group>"; };
+		DA457FD82B1F6B16002D7982 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
+		DA457FDE2B1F790B002D7982 /* NetworkProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocolMock.swift; sourceTree = "<group>"; };
+		DA457FE02B1FA28E002D7982 /* JokeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryTests.swift; sourceTree = "<group>"; };
+		DA457FE32B1FACBF002D7982 /* JokesResponse+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokesResponse+Stub.swift"; sourceTree = "<group>"; };
+		DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJokesServiceTests.swift; sourceTree = "<group>"; };
+		DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryMock.swift; sourceTree = "<group>"; };
 		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +92,12 @@
 		DA7EE6CE2B1BF53E007A1121 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		DA7EE6D02B1BF5A1007A1121 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		DA7EE6D62B1E6903007A1121 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		DA7EE6D82B1E6A7C007A1121 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		DA7EE6DA2B1E6BCD007A1121 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DA7EE6DC2B1F625A007A1121 /* JokesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesResponse.swift; sourceTree = "<group>"; };
+		DA7EE6E22B1F63FB007A1121 /* GetJokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJokesService.swift; sourceTree = "<group>"; };
+		DA7EE6E42B1F6543007A1121 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAE020072B0408F300459943 /* MVPCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE0200A2B0408F300459943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE0200C2B0408F300459943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,9 +145,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA457FDA2B1F70F6002D7982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6DC2B1F625A007A1121 /* JokesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA457FDB2B1F78A3002D7982 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FE52B1FB033002D7982 /* Services */,
+				DA457FDD2B1F78E3002D7982 /* Doubles */,
+				DA457FDC2B1F78CD002D7982 /* Repositories */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DA457FDC2B1F78CD002D7982 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FE02B1FA28E002D7982 /* JokeRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DA457FDD2B1F78E3002D7982 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FDE2B1F790B002D7982 /* NetworkProtocolMock.swift */,
+				DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		DA457FE22B1FAC83002D7982 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FE32B1FACBF002D7982 /* JokesResponse+Stub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		DA457FE52B1FB033002D7982 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DA4CBB432B1BA2B600734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FDA2B1F70F6002D7982 /* Models */,
 				DAE0202B2B04143500459943 /* HomeProtocols.swift */,
 				DAE020292B04140600459943 /* HomePresenter.swift */,
 				DAE020272B0413B400459943 /* HomeViewController.swift */,
@@ -133,6 +211,7 @@
 		DA4CBB442B1BA2D800734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FE22B1FAC83002D7982 /* Stubs */,
 				DAE0209E2B0435F900459943 /* Views */,
 				DA4CBB452B1BA2F700734FE2 /* Doubles */,
 				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
@@ -209,6 +288,52 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		DA7EE6D52B1E6806007A1121 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6E12B1F62F5007A1121 /* Repositories */,
+				DA7EE6E02B1F62CE007A1121 /* Services */,
+				DA7EE6DF2B1F62B2007A1121 /* Helpers */,
+				DA7EE6DE2B1F628A007A1121 /* Protocols */,
+				DA7EE6DA2B1E6BCD007A1121 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DA7EE6DE2B1F628A007A1121 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6D62B1E6903007A1121 /* NetworkProtocols.swift */,
+				DA457FD62B1F69C1002D7982 /* JokeRepositoryType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DA7EE6DF2B1F62B2007A1121 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6D82B1E6A7C007A1121 /* HttpMethod.swift */,
+				DA7EE6E42B1F6543007A1121 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DA7EE6E02B1F62CE007A1121 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA7EE6E22B1F63FB007A1121 /* GetJokesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA7EE6E12B1F62F5007A1121 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FD82B1F6B16002D7982 /* JokeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		DAE01FFE2B0408F300459943 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +355,7 @@
 		DAE020092B0408F300459943 /* MVPCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EE6D52B1E6806007A1121 /* Network */,
 				DA7EE6D22B1BF6B9007A1121 /* Helpers */,
 				DAE020232B04133E00459943 /* Scenes */,
 				DAE0201E2B04129500459943 /* Coordinator */,
@@ -273,6 +399,7 @@
 		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FDB2B1F78A3002D7982 /* Network */,
 				DA4CBB502B1BE8FF00734FE2 /* Settings */,
 				DA4CBB442B1BA2D800734FE2 /* Home */,
 				DAE0209D2B0435E200459943 /* Coordinator */,
@@ -428,18 +555,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7EE6D72B1E6903007A1121 /* NetworkProtocols.swift in Sources */,
 				DAE0200F2B0408F300459943 /* ViewController.swift in Sources */,
 				DAE020202B0412CD00459943 /* MainCoordinator.swift in Sources */,
 				DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */,
+				DA7EE6DD2B1F625A007A1121 /* JokesResponse.swift in Sources */,
+				DA7EE6E52B1F6543007A1121 /* Constants.swift in Sources */,
 				DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */,
+				DA7EE6E32B1F63FC007A1121 /* GetJokesService.swift in Sources */,
 				DAE020262B04139000459943 /* HomeView.swift in Sources */,
 				DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */,
+				DA457FD92B1F6B16002D7982 /* JokeRepository.swift in Sources */,
 				DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */,
+				DA7EE6D92B1E6A7C007A1121 /* HttpMethod.swift in Sources */,
 				DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */,
 				DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */,
+				DA457FD72B1F69C1002D7982 /* JokeRepositoryType.swift in Sources */,
 				DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */,
 				DAE020282B0413B400459943 /* HomeViewController.swift in Sources */,
 				DAE020222B0412EE00459943 /* CoordinatorProtocols.swift in Sources */,
+				DA7EE6DB2B1E6BCD007A1121 /* NetworkManager.swift in Sources */,
 				DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */,
 				DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */,
 				DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */,
@@ -458,12 +593,17 @@
 				DA4CBB572B1BE98900734FE2 /* SettingsViewSpy.swift in Sources */,
 				DAE0208E2B042FF900459943 /* ViewControllerMock.swift in Sources */,
 				DA4CBB532B1BE95200734FE2 /* SettingsViewControllerSpy.swift in Sources */,
+				DA457FDF2B1F790B002D7982 /* NetworkProtocolMock.swift in Sources */,
 				DA4CBB552B1BE97000734FE2 /* SettingsPresenterSpy.swift in Sources */,
+				DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */,
 				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,
 				DA4CBB592B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift in Sources */,
+				DA457FE12B1FA28E002D7982 /* JokeRepositoryTests.swift in Sources */,
+				DA457FE42B1FACBF002D7982 /* JokesResponse+Stub.swift in Sources */,
 				DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */,
 				DA4CBB5C2B1BEAF300734FE2 /* SettingsViewTests.swift in Sources */,
 				DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */,
+				DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */,
 				DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */,
 				DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */,
 				DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */,

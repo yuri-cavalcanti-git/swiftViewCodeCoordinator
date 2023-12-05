@@ -1,9 +1,15 @@
 import UIKit
 
 struct CoordinatorFactory {
+    private let repository: JokeRepository
+    
+    init(network: NetworkProtocol) {
+        self.repository = JokeRepository(http: network)
+    }
+    
     func buildHome() -> HomeViewController {
         let contentView = HomeView()
-        let presenter = HomePresenter(text: "Hello")
+        let presenter = HomePresenter(repository: repository)
         let controller = HomeViewController(contentView: contentView,
                                             presenter: presenter)
         presenter.controller = controller

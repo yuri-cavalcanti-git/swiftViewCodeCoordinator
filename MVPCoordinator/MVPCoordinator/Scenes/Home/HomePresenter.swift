@@ -2,15 +2,25 @@ import UIKit
 
 final class HomePresenter {
     weak var controller: HomeViewControllerType?
-    private let text: String
+    private let repository: JokeRepositoryType
     
-    init(text: String) {
-        self.text = text
+    
+    init(repository: JokeRepositoryType) {
+        self.repository = repository
     }
 }
 
 extension HomePresenter: HomePresenterType {
     func load() {
-        controller?.show(text: text)
+        repository.getJoke { [weak self] result in
+            switch result {
+            case .success(let response):
+                print(response)
+                // Todo
+            case .failure(let error):
+                print(error.localizedDescription)
+                // Todo
+            }
+        }
     }
 }

@@ -7,22 +7,24 @@ public enum Flows {
 public final class MainCoordinator: Coordinator {
     
     public var navigationController: UINavigationController
-//    public var currentViewController: UIViewController? { navigationController.visibleViewController }
+    //    public var currentViewController: UIViewController? { navigationController.visibleViewController }
     public var currentViewController: UIViewController? {
         return navigationController.topViewController
     }
-
-    private let controllerFactory: CoordinatorFactory
     
     private let flow: Flows
+    private let network: NetworkProtocol
+    private let controllerFactory: CoordinatorFactory
     
-    public init(navigationController: UINavigationController,
-                flow: Flows) {
+    init(navigationController: UINavigationController,
+         flow: Flows,
+         network: NetworkProtocol) {
         self.navigationController = navigationController
-        self.controllerFactory = CoordinatorFactory()
         self.flow = flow
+        self.network = network
+        self.controllerFactory = CoordinatorFactory(network: network)
     }
-
+    
     public func start() {
         switch flow {
         case .firstFlow:

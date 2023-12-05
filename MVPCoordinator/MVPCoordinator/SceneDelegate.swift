@@ -19,9 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
-        
+        let network: NetworkProtocol = NetworkManager.shared
         let coordinator = MainCoordinator(navigationController: navigationController,
-                                          flow: .firstFlow)
+                                          flow: .firstFlow,
+                                          network: network)
         coordinator.start()
         self.coordinator = coordinator
         guard let _ = (scene as? UIWindowScene) else { return }

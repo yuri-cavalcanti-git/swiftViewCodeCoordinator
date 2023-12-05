@@ -7,21 +7,37 @@ final class HomePresenterTests: QuickSpec {
     override func spec() {
         var sut: HomePresenter!
         var controller: HomeViewControllerSpy!
-        
+        var repository: JokeRepositoryMock!
+
         beforeEach {
             controller = HomeViewControllerSpy()
-            sut = HomePresenter(text: "Hello")
-            
+            repository = JokeRepositoryMock()
+            sut = HomePresenter(repository: repository)
+
             sut.controller = controller
         }
-        
+
         describe("load") {
-            beforeEach {
-                sut.load()
+            context("when request succeeds") {
+                beforeEach {
+                    repository.getJokeResult = .success(.stub())
+                    sut.load()
+                }
+
+                it("calls controller`s show") {
+                   //Todo
+                }
             }
-            
-            it("calls controller`s show") {
-               expect(controller.textParam) == ["Hello"]
+
+            context("when request fails") {
+                beforeEach {
+//                    repository.getJokeResult = .failure(Error)
+                    sut.load()
+                }
+
+                it("calls controller`s show") {
+                   //Todo
+                }
             }
         }
     }
