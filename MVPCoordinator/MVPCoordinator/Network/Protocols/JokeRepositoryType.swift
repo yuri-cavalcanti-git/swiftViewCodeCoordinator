@@ -1,3 +1,3 @@
 protocol JokeRepositoryType {
-    func getJoke(completion: @escaping (Result<JokesResponse, Error>) -> Void)
+    func getJoke(completion: @escaping (Result<JokesResponse, ApiError>) -> Void)
 }

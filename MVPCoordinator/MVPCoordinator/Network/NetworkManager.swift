@@ -6,9 +6,9 @@ class NetworkManager: NetworkProtocol {
     
     private init() {}
     
-    func request<T: Codable>(service: ServiceProtocol, completion: @escaping (Result<T, Error>) -> Void) {
+    func request<T: Codable>(service: ServiceProtocol, completion: @escaping (Result<T, ApiError>) -> Void) {
         guard let url = service.url else {
-            print("Error with URL")
+            completion(.failure(.invalidUrl))
             return
         }
         
@@ -22,8 +22,8 @@ class NetworkManager: NetworkProtocol {
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                print("Error: \(error.localizedDescription)")
-                completion(.failure(error))
+                let errorDescription = error.localizedDescription as? Error
+                completion(.failure(.unknownError(error: errorDescription)))
                 return
             }
             
@@ -40,11 +40,10 @@ class NetworkManager: NetworkProtocol {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let jsonData = try decoder.decode(T.self, from: data)
-                print("Received JSON: \(jsonData)")
                 completion(.success(jsonData))
             } catch {
-                print("Failed to decode JSON: \(error)")
-                completion(.failure(error))
+                let errorDescription = error.localizedDescription as? Error
+                completion(.failure(.decoding(error: errorDescription)))
             }
         }
         task.resume()

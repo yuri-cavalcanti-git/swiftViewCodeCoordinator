@@ -31,7 +31,7 @@ final class HomePresenterTests: QuickSpec {
 
             context("when request fails") {
                 beforeEach {
-//                    repository.getJokeResult = .failure(Error)
+                    repository.getJokeResult = .failure(.general)
                     sut.load()
                 }
 

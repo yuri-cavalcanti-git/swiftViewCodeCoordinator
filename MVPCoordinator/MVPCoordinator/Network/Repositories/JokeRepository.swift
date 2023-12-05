@@ -8,17 +8,18 @@ final class JokeRepository {
 }
 
 extension JokeRepository: JokeRepositoryType {
-    func getJoke(completion: @escaping (Result<JokesResponse, Error>) -> Void) {
+    func getJoke(completion: @escaping (Result<JokesResponse, ApiError>) -> Void) {
         let getJokesService = GetJokesService()
-        http.request(service: getJokesService) { (result: Result<JokesResponse, Error>) in
+        http.request(service: getJokesService) { (result: Result<JokesResponse, ApiError>) in
             switch result {
             case .success(let jokesResponse):
                 DispatchQueue.main.async {
                     completion(.success(jokesResponse))
                 }
             case .failure(let error):
+                let errorDescription = error.localizedDescription as? Error
                 DispatchQueue.main.async {
-                    completion(.failure(error))
+                    completion(.failure(.unknownError(error: errorDescription)))
                 }
             }
         }

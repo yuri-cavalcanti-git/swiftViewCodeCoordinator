@@ -14,6 +14,7 @@
 		DA457FE42B1FACBF002D7982 /* JokesResponse+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE32B1FACBF002D7982 /* JokesResponse+Stub.swift */; };
 		DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */; };
 		DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */; };
+		DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FEC2B1FC055002D7982 /* ApiError.swift */; };
 		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
 		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
@@ -78,6 +79,7 @@
 		DA457FE32B1FACBF002D7982 /* JokesResponse+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokesResponse+Stub.swift"; sourceTree = "<group>"; };
 		DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJokesServiceTests.swift; sourceTree = "<group>"; };
 		DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryMock.swift; sourceTree = "<group>"; };
+		DA457FEC2B1FC055002D7982 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -196,10 +198,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		DA457FEB2B1FBFFC002D7982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FE22B1FAC83002D7982 /* Stubs */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DA4CBB432B1BA2B600734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DA457FDA2B1F70F6002D7982 /* Models */,
 				DAE0202B2B04143500459943 /* HomeProtocols.swift */,
 				DAE020292B04140600459943 /* HomePresenter.swift */,
 				DAE020272B0413B400459943 /* HomeViewController.swift */,
@@ -211,7 +220,6 @@
 		DA4CBB442B1BA2D800734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DA457FE22B1FAC83002D7982 /* Stubs */,
 				DAE0209E2B0435F900459943 /* Views */,
 				DA4CBB452B1BA2F700734FE2 /* Doubles */,
 				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
@@ -314,6 +322,7 @@
 			children = (
 				DA7EE6D82B1E6A7C007A1121 /* HttpMethod.swift */,
 				DA7EE6E42B1F6543007A1121 /* Constants.swift */,
+				DA457FEC2B1FC055002D7982 /* ApiError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 		DAE020092B0408F300459943 /* MVPCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FDA2B1F70F6002D7982 /* Models */,
 				DA7EE6D52B1E6806007A1121 /* Network */,
 				DA7EE6D22B1BF6B9007A1121 /* Helpers */,
 				DAE020232B04133E00459943 /* Scenes */,
@@ -399,6 +409,7 @@
 		DAE020322B0415BA00459943 /* MVPCoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FEB2B1FBFFC002D7982 /* Models */,
 				DA457FDB2B1F78A3002D7982 /* Network */,
 				DA4CBB502B1BE8FF00734FE2 /* Settings */,
 				DA4CBB442B1BA2D800734FE2 /* Home */,
@@ -559,6 +570,7 @@
 				DAE0200F2B0408F300459943 /* ViewController.swift in Sources */,
 				DAE020202B0412CD00459943 /* MainCoordinator.swift in Sources */,
 				DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */,
+				DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */,
 				DA7EE6DD2B1F625A007A1121 /* JokesResponse.swift in Sources */,
 				DA7EE6E52B1F6543007A1121 /* Constants.swift in Sources */,
 				DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */,

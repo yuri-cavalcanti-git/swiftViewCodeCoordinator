@@ -1,10 +1,8 @@
 import Foundation
 
-typealias ApiResult = (Result<Data, Error>) -> Void
-
 protocol NetworkProtocol: AnyObject {
-    func request<T: Codable>(service: ServiceProtocol, completion: @escaping (Result<T, Error>) -> Void)
-    func request (service: ServiceProtocol, completion: @escaping (Result<Data, Error>) -> Void)
+    func request<T: Codable>(service: ServiceProtocol, completion: @escaping (Result<T, ApiError>) -> Void)
+    func request (service: ServiceProtocol, completion: @escaping (Result<Data, ApiError>) -> Void)
 }
 
 protocol ServiceProtocol {
