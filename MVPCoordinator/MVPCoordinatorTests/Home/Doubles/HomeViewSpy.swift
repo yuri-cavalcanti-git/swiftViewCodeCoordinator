@@ -3,8 +3,10 @@ import UIKit
 @testable import MVPCoordinator
 
 final class HomeViewSpy: UIView, HomeViewType {
-    private(set) var showParam = [String]()
-    func show(text: String) {
-        showParam.append(text)
+    var didTapButton: (() -> Void)?
+    
+    private(set) var showParam = [HomeViewState]()
+    func show(state: HomeViewState) {
+        showParam.append(state)
     }
 }

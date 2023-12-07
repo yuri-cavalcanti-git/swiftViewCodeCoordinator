@@ -5,21 +5,20 @@ import Nimble_Snapshots
 
 @testable import MVPCoordinator
 
-final class HomeViewTets: QuickSpec {
+final class HomeHeaderViewTests: QuickSpec {
     override func spec() {
-        var sut: HomeView!
+        var sut: HomeHeaderView!
 
         beforeEach {
-            sut = HomeView(frame: CGRect(x: 0, y: 0, width: 320, height: 400))
+            sut = HomeHeaderView()
+            sut.frame = UIScreen.main.bounds
         }
 
-        describe("show") {
-            beforeEach {
-                sut.show(text: "Hello")
-            }
+        describe("#init") {
             it("has a valid snapshot") {
                 expect(sut).to(haveValidSnapshot())
             }
         }
     }
 }
+

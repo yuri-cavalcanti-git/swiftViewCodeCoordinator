@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3082FB2B20E7F700F5A4F6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA3082FA2B20E7F700F5A4F6 /* SnapKit */; };
+		DA3082FD2B20E87C00F5A4F6 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3082FC2B20E87C00F5A4F6 /* HomeHeaderView.swift */; };
+		DA3082FF2B20F28F00F5A4F6 /* HomeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3082FE2B20F28F00F5A4F6 /* HomeLoadingView.swift */; };
+		DA3083012B20F57000F5A4F6 /* HomeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3083002B20F57000F5A4F6 /* HomeErrorView.swift */; };
+		DA3083032B20F5D600F5A4F6 /* HomeReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3083022B20F5D600F5A4F6 /* HomeReadyView.swift */; };
+		DA3083052B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3083042B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift */; };
+		DA3083082B21009700F5A4F6 /* HomeHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3083072B21009700F5A4F6 /* HomeHeaderViewTests.swift */; };
+		DA30830A2B22697E00F5A4F6 /* HomeLoadingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3083092B22697E00F5A4F6 /* HomeLoadingViewTests.swift */; };
+		DA30830C2B226A8500F5A4F6 /* HomeErrorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30830B2B226A8500F5A4F6 /* HomeErrorViewTests.swift */; };
+		DA30830E2B226B4200F5A4F6 /* HomeReadyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30830D2B226B4200F5A4F6 /* HomeReadyViewTests.swift */; };
 		DA457FD72B1F69C1002D7982 /* JokeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FD62B1F69C1002D7982 /* JokeRepositoryType.swift */; };
 		DA457FD92B1F6B16002D7982 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FD82B1F6B16002D7982 /* JokeRepository.swift */; };
 		DA457FDF2B1F790B002D7982 /* NetworkProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FDE2B1F790B002D7982 /* NetworkProtocolMock.swift */; };
@@ -15,6 +25,8 @@
 		DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */; };
 		DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */; };
 		DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FEC2B1FC055002D7982 /* ApiError.swift */; };
+		DA457FEF2B1FC5CF002D7982 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FEE2B1FC5CF002D7982 /* HomeViewState.swift */; };
+		DA457FF22B1FC67D002D7982 /* HomeReadyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FF12B1FC67D002D7982 /* HomeReadyViewModel.swift */; };
 		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
 		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
@@ -57,7 +69,7 @@
 		DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020972B04335F00459943 /* HomeViewSpy.swift */; };
 		DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE020992B0433E500459943 /* HomePresenterSpy.swift */; };
 		DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */; };
-		DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0209F2B04366100459943 /* HomeViewTets.swift */; };
+		DAE020A02B04366100459943 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0209F2B04366100459943 /* HomeViewTests.swift */; };
 		DAE020A32B0436DD00459943 /* Nimble-Snapshots in Frameworks */ = {isa = PBXBuildFile; productRef = DAE020A22B0436DD00459943 /* Nimble-Snapshots */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +84,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3082FC2B20E87C00F5A4F6 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		DA3082FE2B20F28F00F5A4F6 /* HomeLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoadingView.swift; sourceTree = "<group>"; };
+		DA3083002B20F57000F5A4F6 /* HomeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeErrorView.swift; sourceTree = "<group>"; };
+		DA3083022B20F5D600F5A4F6 /* HomeReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReadyView.swift; sourceTree = "<group>"; };
+		DA3083042B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeReadyViewModel+Stub.swift"; sourceTree = "<group>"; };
+		DA3083072B21009700F5A4F6 /* HomeHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewTests.swift; sourceTree = "<group>"; };
+		DA3083092B22697E00F5A4F6 /* HomeLoadingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoadingViewTests.swift; sourceTree = "<group>"; };
+		DA30830B2B226A8500F5A4F6 /* HomeErrorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeErrorViewTests.swift; sourceTree = "<group>"; };
+		DA30830D2B226B4200F5A4F6 /* HomeReadyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReadyViewTests.swift; sourceTree = "<group>"; };
 		DA457FD62B1F69C1002D7982 /* JokeRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryType.swift; sourceTree = "<group>"; };
 		DA457FD82B1F6B16002D7982 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
 		DA457FDE2B1F790B002D7982 /* NetworkProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocolMock.swift; sourceTree = "<group>"; };
@@ -80,6 +101,8 @@
 		DA457FE62B1FB1FC002D7982 /* GetJokesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJokesServiceTests.swift; sourceTree = "<group>"; };
 		DA457FE82B1FB984002D7982 /* JokeRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryMock.swift; sourceTree = "<group>"; };
 		DA457FEC2B1FC055002D7982 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		DA457FEE2B1FC5CF002D7982 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		DA457FF12B1FC67D002D7982 /* HomeReadyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReadyViewModel.swift; sourceTree = "<group>"; };
 		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +146,7 @@
 		DAE020972B04335F00459943 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
 		DAE020992B0433E500459943 /* HomePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterSpy.swift; sourceTree = "<group>"; };
 		DAE0209B2B04348C00459943 /* HomeViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
-		DAE0209F2B04366100459943 /* HomeViewTets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTets.swift; sourceTree = "<group>"; };
+		DAE0209F2B04366100459943 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3082FB2B20E7F700F5A4F6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +171,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3083062B20FF9F00F5A4F6 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				DA3083042B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		DA457FDA2B1F70F6002D7982 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,9 +238,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DA457FF02B1FC66A002D7982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA457FEE2B1FC5CF002D7982 /* HomeViewState.swift */,
+				DA457FF12B1FC67D002D7982 /* HomeReadyViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DA4CBB432B1BA2B600734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA457FF02B1FC66A002D7982 /* Models */,
 				DAE0202B2B04143500459943 /* HomeProtocols.swift */,
 				DAE020292B04140600459943 /* HomePresenter.swift */,
 				DAE020272B0413B400459943 /* HomeViewController.swift */,
@@ -220,6 +262,7 @@
 		DA4CBB442B1BA2D800734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA3083062B20FF9F00F5A4F6 /* Stubs */,
 				DAE0209E2B0435F900459943 /* Views */,
 				DA4CBB452B1BA2F700734FE2 /* Doubles */,
 				DAE020952B0432C000459943 /* HomeViewControllerTests.swift */,
@@ -402,6 +445,10 @@
 			isa = PBXGroup;
 			children = (
 				DAE020252B04139000459943 /* HomeView.swift */,
+				DA3082FC2B20E87C00F5A4F6 /* HomeHeaderView.swift */,
+				DA3082FE2B20F28F00F5A4F6 /* HomeLoadingView.swift */,
+				DA3083002B20F57000F5A4F6 /* HomeErrorView.swift */,
+				DA3083022B20F5D600F5A4F6 /* HomeReadyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -449,7 +496,11 @@
 		DAE0209E2B0435F900459943 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DAE0209F2B04366100459943 /* HomeViewTets.swift */,
+				DAE0209F2B04366100459943 /* HomeViewTests.swift */,
+				DA3083072B21009700F5A4F6 /* HomeHeaderViewTests.swift */,
+				DA3083092B22697E00F5A4F6 /* HomeLoadingViewTests.swift */,
+				DA30830B2B226A8500F5A4F6 /* HomeErrorViewTests.swift */,
+				DA30830D2B226B4200F5A4F6 /* HomeReadyViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -471,6 +522,7 @@
 			);
 			name = MVPCoordinator;
 			packageProductDependencies = (
+				DA3082FA2B20E7F700F5A4F6 /* SnapKit */,
 			);
 			productName = MVPCoordinator;
 			productReference = DAE020072B0408F300459943 /* MVPCoordinator.app */;
@@ -531,6 +583,7 @@
 				DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */,
 				DAE020852B042EA100459943 /* XCRemoteSwiftPackageReference "Nimble" */,
 				DAE020A12B0436DD00459943 /* XCRemoteSwiftPackageReference "Nimble-Snapshots" */,
+				DA3082F92B20E7F700F5A4F6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = DAE020082B0408F300459943 /* Products */;
 			projectDirPath = "";
@@ -573,16 +626,21 @@
 				DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */,
 				DA7EE6DD2B1F625A007A1121 /* JokesResponse.swift in Sources */,
 				DA7EE6E52B1F6543007A1121 /* Constants.swift in Sources */,
+				DA457FF22B1FC67D002D7982 /* HomeReadyViewModel.swift in Sources */,
 				DAE0200B2B0408F300459943 /* AppDelegate.swift in Sources */,
 				DA7EE6E32B1F63FC007A1121 /* GetJokesService.swift in Sources */,
 				DAE020262B04139000459943 /* HomeView.swift in Sources */,
 				DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */,
+				DA3082FD2B20E87C00F5A4F6 /* HomeHeaderView.swift in Sources */,
 				DA457FD92B1F6B16002D7982 /* JokeRepository.swift in Sources */,
 				DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */,
 				DA7EE6D92B1E6A7C007A1121 /* HttpMethod.swift in Sources */,
 				DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */,
 				DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */,
+				DA3083012B20F57000F5A4F6 /* HomeErrorView.swift in Sources */,
+				DA3082FF2B20F28F00F5A4F6 /* HomeLoadingView.swift in Sources */,
 				DA457FD72B1F69C1002D7982 /* JokeRepositoryType.swift in Sources */,
+				DA3083032B20F5D600F5A4F6 /* HomeReadyView.swift in Sources */,
 				DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */,
 				DAE020282B0413B400459943 /* HomeViewController.swift in Sources */,
 				DAE020222B0412EE00459943 /* CoordinatorProtocols.swift in Sources */,
@@ -590,6 +648,7 @@
 				DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */,
 				DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */,
 				DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */,
+				DA457FEF2B1FC5CF002D7982 /* HomeViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3083082B21009700F5A4F6 /* HomeHeaderViewTests.swift in Sources */,
 				DAE0208C2B042FBA00459943 /* UINavigationControllerMock.swift in Sources */,
 				DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */,
 				DA7EE6CD2B1BEF85007A1121 /* Mirror+Ext.swift in Sources */,
@@ -611,14 +671,18 @@
 				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,
 				DA4CBB592B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift in Sources */,
 				DA457FE12B1FA28E002D7982 /* JokeRepositoryTests.swift in Sources */,
+				DA30830E2B226B4200F5A4F6 /* HomeReadyViewTests.swift in Sources */,
 				DA457FE42B1FACBF002D7982 /* JokesResponse+Stub.swift in Sources */,
+				DA3083052B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift in Sources */,
 				DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */,
 				DA4CBB5C2B1BEAF300734FE2 /* SettingsViewTests.swift in Sources */,
 				DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */,
 				DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */,
-				DAE020A02B04366100459943 /* HomeViewTets.swift in Sources */,
+				DAE020A02B04366100459943 /* HomeViewTests.swift in Sources */,
 				DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */,
 				DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */,
+				DA30830A2B22697E00F5A4F6 /* HomeLoadingViewTests.swift in Sources */,
+				DA30830C2B226A8500F5A4F6 /* HomeErrorViewTests.swift in Sources */,
 				DAE020942B0431F500459943 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,6 +942,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA3082F92B20E7F700F5A4F6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Quick.git";
@@ -905,6 +977,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA3082FA2B20E7F700F5A4F6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA3082F92B20E7F700F5A4F6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		DAE020832B042E8000459943 /* Quick */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DAE020822B042E8000459943 /* XCRemoteSwiftPackageReference "Quick" */;

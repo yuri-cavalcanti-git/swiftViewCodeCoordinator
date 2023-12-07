@@ -25,7 +25,7 @@ final class HomePresenterTests: QuickSpec {
                 }
 
                 it("calls controller`s show") {
-                   //Todo
+                    expect(controller.showParam) == [.loading, .ready(viewmodel: .stub())]
                 }
             }
 
@@ -36,7 +36,7 @@ final class HomePresenterTests: QuickSpec {
                 }
 
                 it("calls controller`s show") {
-                   //Todo
+                    expect(controller.showParam) == [.loading, .error(error: "The operation couldn’t be completed")]
                 }
             }
         }

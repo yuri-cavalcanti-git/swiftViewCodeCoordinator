@@ -38,6 +38,9 @@ class HomeViewController: UIViewController {
     }
     
     private func bindLayoutEvents() {
+        contentView.didTapButton = { [weak self] in
+            self?.presenter.load()
+        }
     }
     
     private func addBarButton() {
@@ -55,7 +58,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeViewControllerType {
-    func show(text: String) {
-        contentView.show(text: text)
+    func show(state: HomeViewState) {
+        contentView.show(state: state)
     }
 }

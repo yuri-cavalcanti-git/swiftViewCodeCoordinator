@@ -12,14 +12,14 @@ final class HomePresenter {
 
 extension HomePresenter: HomePresenterType {
     func load() {
+        controller?.show(state: .loading)
         repository.getJoke { [weak self] result in
             switch result {
             case .success(let response):
-                print(response)
-                // Todo
+                self?.controller?.show(state: .ready(viewmodel: HomeReadyViewModel(setup: response.setup,
+                                                                                   punchline: response.punchline)))
             case .failure(let error):
-                print(error.localizedDescription)
-                // Todo
+                self?.controller?.show(state: .error(error: error.localizedDescription))
             }
         }
     }

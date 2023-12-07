@@ -1,10 +1,3 @@
-//
-//  JokesResponse+Stub.swift
-//  MVPCoordinatorTests
-//
-//  Created by Yuri Cavalcanti on 05/12/23.
-//
-
 import Foundation
 import Quick
 import Nimble

@@ -22,11 +22,9 @@ final class JokeRepositoryTests: QuickSpec {
                     if case .success(let object) = result {
                         expectedResult = object
                     }
-                    print(expectedResult)
                 }
                 
                 it("calls request") {
-                    print(expectedResult)
                     expect(httpMock.requestWasCalled) == true
                 }
             }

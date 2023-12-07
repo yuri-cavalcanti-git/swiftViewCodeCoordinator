@@ -50,11 +50,11 @@ final class HomeViewControllerTests: QuickSpec {
         
         describe("show") {
             beforeEach {
-                sut.show(text: "Hello")
+                sut.show(state: .ready(viewmodel: .stub()))
             }
             
             it("calls view`s show"){
-                expect(view.showParam) == ["Hello"]
+                expect(view.showParam) == [.ready(viewmodel: .stub())]
             }
         }
         
@@ -67,6 +67,16 @@ final class HomeViewControllerTests: QuickSpec {
 
             it("calls delegate`s openSettings") {
                 expect(delegate.openSettingsCount) == 1
+            }
+        }
+        
+        describe("bindLayoutEvents") {
+            beforeEach {
+                view.didTapButton?()
+            }
+            
+            it("calls presenter`s load") {
+                expect(presenter.loadCount) == 2
             }
         }
     }

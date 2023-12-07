@@ -1,10 +1,11 @@
 import UIKit
 protocol HomeViewType where Self: UIView {
-    func show(text: String)
+    var didTapButton: (() -> Void)? { get set }
+    func show(state: HomeViewState)
 }
 
 protocol HomeViewControllerType where Self: UIViewController {
-    func show(text: String)
+    func show(state: HomeViewState)
 }
 
 protocol HomePresenterType {
