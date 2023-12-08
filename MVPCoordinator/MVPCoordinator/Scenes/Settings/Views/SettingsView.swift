@@ -3,16 +3,21 @@ import UIKit
 final class SettingsView: UIView {
     var didTapButton: (() -> Void)?
     
+    private let label: UILabel = {
+        let label = UILabel()
+        label.text = "Update text"
+        label.font = UIFont.systemFont(ofSize: 40)
+        label.textAlignment = .center
+        return label
+    }()
+    
     private let button: UIButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .black
-        button.setTitle("Next View", for: .normal)
+        button.setTitle("Show List", for: .normal)
         button.setTitleColor(.darkGray, for: .normal)
         return button
     }()
-    
-    
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
@@ -25,21 +30,27 @@ final class SettingsView: UIView {
     }
     
     private func setup() {
-        backgroundColor = .darkGray
+        backgroundColor = .lightGray
         buildViewHierachy()
         addConstraints()
         bindLayoutEvents()
     }
     
     private func buildViewHierachy() {
+        addSubview(label)
         addSubview(button)
     }
     
     private func addConstraints() {
-        NSLayoutConstraint.activate([
-            button.centerYAnchor.constraint(equalTo: centerYAnchor),
-            button.centerXAnchor.constraint(equalTo: centerXAnchor)
-        ])
+        label.snp.makeConstraints { make in
+            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
+            make.centerX.equalToSuperview()
+        }
+        
+        button.snp.makeConstraints { make in
+            make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
     }
     
     private func bindLayoutEvents() {
