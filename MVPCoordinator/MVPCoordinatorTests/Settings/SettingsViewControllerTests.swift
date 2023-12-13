@@ -49,12 +49,24 @@ final class SettingsViewControllerTests: QuickSpec {
         }
         
         describe("#show") {
-            beforeEach {
-                sut.show()
+            context("when title is nil") {
+                beforeEach {
+                    sut.show(titleText: nil)
+                }
+                
+                it("calls view`s show"){
+                    expect(view.showParam) == [nil]
+                }
             }
-            
-            it("calls view`s show"){
-                expect(view.showCount) == 1
+                
+            context("when title is not nil") {
+                beforeEach {
+                    sut.show(titleText: "Title")
+                }
+                
+                it("calls view`s show"){
+                    expect(view.showParam) == ["Title"]
+                }
             }
         }
         
@@ -65,6 +77,17 @@ final class SettingsViewControllerTests: QuickSpec {
             
             it("calls delegate`s presentListView") {
                 expect(delegate.presentListViewCount) == 1
+            }
+        }
+        
+        // MARK: - ListUpdateListener
+        describe("#updateTitle") {
+            beforeEach {
+                sut.updateTitle(language: "swift")
+            }
+            
+            it("calls view`s show") {
+                expect(view.showParam) == ["swift"]
             }
         }
     }

@@ -54,5 +54,32 @@ final class MainCoordinatorTests: QuickSpec {
                 expect(navigationControllerMock.currentPresentedViewController).to(beAKindOf(ListViewController.self))
             }
         }
+        
+        describe("#updateText") {
+            var listenerSpy1: ListUpdateListenerSpy!
+            var listenerSpy2: ListUpdateListenerSpy!
+            
+            beforeEach {
+                listenerSpy1 = ListUpdateListenerSpy()
+                listenerSpy2 = ListUpdateListenerSpy()
+                navigationControllerMock.viewControllers = [
+                    UIViewController(),
+                    listenerSpy1,
+                    UIViewController(),
+                    listenerSpy2,
+                    UIViewController()
+                ]
+                sut.updateText(language: "swift")
+            }
+            
+            it("updates all listener in navigation controller") {
+                expect(listenerSpy1.updateTitleParam) == ["swift"]
+                expect(listenerSpy2.updateTitleParam) == ["swift"]
+            }
+            
+            it("dismiss controller") {
+                expect(navigationControllerMock.dismissCount) == 1
+            }
+        }
     }
 }

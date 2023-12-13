@@ -57,4 +57,23 @@ extension MainCoordinator: SettingsViewControllerDelegate {
 }
 
 extension MainCoordinator: ListViewControllerDelegate {
+    func updateText(language: String) {
+        navigationController.viewControllers
+            .compactMap { $0 as? ListUpdateListener }
+            .forEach { $0.updateTitle(language: language)}
+        navigationController.dismiss(animated: true)
+    }
 }
+
+/*
+1- Remove da stack:
+ navigationController.viewControllers.removeAll {
+    $0 is NomeDaViewController
+ 
+ 2- pra dar um pop para determinada ViewController
+ guard let nomeDaViewController = navigationController.viewControllers.first(where: { $0 is NomeDaViewController }) else {
+    navigationController.popToRootViewController(animated: true)
+    return
+ }
+ navigationController.popToViewControllwe(nomeDaViewController: navigationController)
+*/

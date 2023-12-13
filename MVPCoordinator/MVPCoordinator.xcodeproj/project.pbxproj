@@ -46,6 +46,8 @@
 		DA47A5002B28F6A60050013F /* ListCellViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4FF2B28F6A60050013F /* ListCellViewTests.swift */; };
 		DA47A5022B29D0130050013F /* ListCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5012B29D0130050013F /* ListCellTests.swift */; };
 		DA47A5052B29D0D10050013F /* ListDataSourceDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5042B29D0D10050013F /* ListDataSourceDelegateTests.swift */; };
+		DA47A5072B2A02120050013F /* ListUpdateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5062B2A02120050013F /* ListUpdateListener.swift */; };
+		DA47A5092B2A40740050013F /* ListUpdateListenerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5082B2A40740050013F /* ListUpdateListenerSpy.swift */; };
 		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
 		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
@@ -141,6 +143,8 @@
 		DA47A4FF2B28F6A60050013F /* ListCellViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewTests.swift; sourceTree = "<group>"; };
 		DA47A5012B29D0130050013F /* ListCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellTests.swift; sourceTree = "<group>"; };
 		DA47A5042B29D0D10050013F /* ListDataSourceDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceDelegateTests.swift; sourceTree = "<group>"; };
+		DA47A5062B2A02120050013F /* ListUpdateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUpdateListener.swift; sourceTree = "<group>"; };
+		DA47A5082B2A40740050013F /* ListUpdateListenerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUpdateListenerSpy.swift; sourceTree = "<group>"; };
 		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +297,7 @@
 				DA47A4DA2B28AC940050013F /* ListPresenter.swift */,
 				DA47A4DC2B28ACA50050013F /* ListViewController.swift */,
 				DA47A4DE2B28ACB40050013F /* ListProtocols.swift */,
+				DA47A5062B2A02120050013F /* ListUpdateListener.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				DA47A4F32B28EDF00050013F /* ListPresenterSpy.swift */,
 				DA47A4F52B28EE050050013F /* ListViewControllerSpy.swift */,
 				DA47A4F72B28EE1B0050013F /* ListViewControllerDelegateSpy.swift */,
+				DA47A5082B2A40740050013F /* ListUpdateListenerSpy.swift */,
 			);
 			path = Double;
 			sourceTree = "<group>";
@@ -732,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA47A5072B2A02120050013F /* ListUpdateListener.swift in Sources */,
 				DA7EE6D72B1E6903007A1121 /* NetworkProtocols.swift in Sources */,
 				DAE0200F2B0408F300459943 /* ViewController.swift in Sources */,
 				DA47A4DF2B28ACB40050013F /* ListProtocols.swift in Sources */,
@@ -793,6 +800,7 @@
 				DA47A5002B28F6A60050013F /* ListCellViewTests.swift in Sources */,
 				DA457FDF2B1F790B002D7982 /* NetworkProtocolMock.swift in Sources */,
 				DA47A4F42B28EDF00050013F /* ListPresenterSpy.swift in Sources */,
+				DA47A5092B2A40740050013F /* ListUpdateListenerSpy.swift in Sources */,
 				DA4CBB552B1BE97000734FE2 /* SettingsPresenterSpy.swift in Sources */,
 				DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */,
 				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,

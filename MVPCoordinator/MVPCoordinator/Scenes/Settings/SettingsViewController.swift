@@ -43,7 +43,13 @@ class SettingsViewController: UIViewController {
 }
 
 extension SettingsViewController: SettingsViewControllerType {
-    func show() {
-        contentView.show()
+    func show(titleText: String?) {
+        contentView.show(titleText: titleText)
+    }
+}
+
+extension SettingsViewController: ListUpdateListener {
+    func updateTitle(language: String) {
+        contentView.show(titleText: language)
     }
 }

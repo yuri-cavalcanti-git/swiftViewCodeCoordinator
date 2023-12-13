@@ -5,7 +5,6 @@ final class SettingsView: UIView {
     
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "Update text"
         label.font = UIFont.systemFont(ofSize: 40)
         label.textAlignment = .center
         return label
@@ -66,6 +65,7 @@ final class SettingsView: UIView {
 }
 
 extension SettingsView: SettingsViewType {
-    func show() {
+    func show(titleText: String?) {
+        label.text = titleText ?? "Update text"
     }
 }

@@ -30,7 +30,7 @@ class ListViewController: UIViewController {
     
     private func bindLayoutEvents() {
         contentView.didTapLanguage = { [weak self] language in
-            print(language)
+            self?.delegate?.updateText(language: language)
         }
     }
 }

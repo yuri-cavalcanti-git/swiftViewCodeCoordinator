@@ -15,11 +15,24 @@ final class SettingsViewTests: QuickSpec {
         }
 
         describe("#show") {
-            beforeEach {
-                sut.show()
-            }
-            it("has a valid snapshot") {
-                expect(sut).to(haveValidSnapshot())
+            context("when title is nil") {
+                beforeEach {
+                    sut.show(titleText: nil)
+                }
+                
+                it("has a valid snapshot") {
+                    expect(sut).to(haveValidSnapshot())
+                }
+                
+                context("when title is not nil") {
+                    beforeEach {
+                        sut.show(titleText: "Title")
+                    }
+                    
+                    it("has a valid snapshot") {
+                        expect(sut).to(haveValidSnapshot())
+                    }
+                }
             }
         }
         

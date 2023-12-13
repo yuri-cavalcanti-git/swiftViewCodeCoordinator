@@ -14,4 +14,5 @@ protocol ListPresenterType {
 }
 
 protocol ListViewControllerDelegate: AnyObject {
+    func updateText(language: String)
 }

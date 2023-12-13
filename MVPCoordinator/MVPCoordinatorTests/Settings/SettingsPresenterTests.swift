@@ -21,7 +21,7 @@ final class SettingsPresenterTests: QuickSpec {
             }
             
             it("calls controller`s show") {
-                expect(controller.showCount) == 1
+                expect(controller.showParam) == [nil]
             }
         }
     }

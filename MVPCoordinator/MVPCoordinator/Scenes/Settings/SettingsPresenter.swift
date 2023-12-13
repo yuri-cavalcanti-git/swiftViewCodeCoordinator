@@ -6,6 +6,6 @@ final class SettingsPresenter {
 
 extension SettingsPresenter: SettingsPresenterType {
     func load() {
-        controller?.show()
+        controller?.show(titleText: nil)
     }
 }

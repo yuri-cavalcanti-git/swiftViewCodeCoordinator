@@ -44,14 +44,14 @@ final class ListViewControllerTests: QuickSpec {
             }
         }
         
-//        describe("bindLayoutEvents") {
-//            beforeEach {
-//                view.didTapButton?()
-//            }
-//
-//            it("calls delegate`s presentListView") {
-//                expect(delegate.presentListViewCount) == 1
-//            }
-//        }
+        describe("bindLayoutEvents") {
+            beforeEach {
+                view.didTapLanguage?("swift")
+            }
+
+            it("calls delegate`s presentListView") {
+                expect(delegate.updateTextParam) == ["swift"]
+            }
+        }
     }
 }
