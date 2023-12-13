@@ -24,4 +24,13 @@ struct CoordinatorFactory {
         presenter.controller = controller
         return controller
     }
+    
+    func buildList() -> ListViewController {
+        let contentView = ListView()
+        let presenter = ListPresenter()
+        let controller = ListViewController(contentView: contentView,
+                                                presenter: presenter)
+        presenter.controller = controller
+        return controller
+    }
 }

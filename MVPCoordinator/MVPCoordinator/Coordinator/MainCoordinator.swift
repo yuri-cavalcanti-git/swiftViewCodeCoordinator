@@ -49,5 +49,12 @@ extension MainCoordinator: HomeViewControllerDelegate {
 }
 
 extension MainCoordinator: SettingsViewControllerDelegate {
-    
+    func presentListView() {
+        let controller = controllerFactory.buildList()
+        controller.delegate = self
+        navigationController.present(controller, animated: true)
+    }
+}
+
+extension MainCoordinator: ListViewControllerDelegate {
 }

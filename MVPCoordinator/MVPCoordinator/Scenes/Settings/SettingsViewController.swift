@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController {
     
     private func bindLayoutEvents() {
         contentView.didTapButton = { [weak self] in
-            // TODO
+            self?.delegate?.presentListView()
         }
     }
 }

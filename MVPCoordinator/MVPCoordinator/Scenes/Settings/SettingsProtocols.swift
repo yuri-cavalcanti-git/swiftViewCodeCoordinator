@@ -14,4 +14,5 @@ protocol SettingsPresenterType {
 }
 
 protocol SettingsViewControllerDelegate: AnyObject {
+    func presentListView()
 }

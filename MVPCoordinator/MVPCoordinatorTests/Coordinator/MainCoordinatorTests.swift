@@ -44,5 +44,15 @@ final class MainCoordinatorTests: QuickSpec {
                 expect(navigationControllerMock.currentPushedViewController).to(beAKindOf(SettingsViewController.self))
             }
         }
+        
+        describe("#presentListView") {
+            beforeEach {
+                sut.presentListView()
+            }
+
+            it("prensents ListViewController") {
+                expect(navigationControllerMock.currentPresentedViewController).to(beAKindOf(ListViewController.self))
+            }
+        }
     }
 }

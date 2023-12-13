@@ -48,13 +48,23 @@ final class SettingsViewControllerTests: QuickSpec {
             }
         }
         
-        describe("show") {
+        describe("#show") {
             beforeEach {
                 sut.show()
             }
             
             it("calls view`s show"){
                 expect(view.showCount) == 1
+            }
+        }
+        
+        describe("bindLayoutEvents") {
+            beforeEach {
+                view.didTapButton?()
+            }
+            
+            it("calls delegate`s presentListView") {
+                expect(delegate.presentListViewCount) == 1
             }
         }
     }

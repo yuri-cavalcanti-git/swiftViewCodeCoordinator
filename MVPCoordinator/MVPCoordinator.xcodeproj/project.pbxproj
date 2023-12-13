@@ -27,6 +27,25 @@
 		DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FEC2B1FC055002D7982 /* ApiError.swift */; };
 		DA457FEF2B1FC5CF002D7982 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FEE2B1FC5CF002D7982 /* HomeViewState.swift */; };
 		DA457FF22B1FC67D002D7982 /* HomeReadyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA457FF12B1FC67D002D7982 /* HomeReadyViewModel.swift */; };
+		DA47A4DB2B28AC940050013F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4DA2B28AC940050013F /* ListPresenter.swift */; };
+		DA47A4DD2B28ACA50050013F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4DC2B28ACA50050013F /* ListViewController.swift */; };
+		DA47A4DF2B28ACB40050013F /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4DE2B28ACB40050013F /* ListProtocols.swift */; };
+		DA47A4E22B28ACD10050013F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4E12B28ACD10050013F /* ListView.swift */; };
+		DA47A4E52B28B3E70050013F /* ListDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4E42B28B3E70050013F /* ListDataSourceDelegate.swift */; };
+		DA47A4E72B28D3B40050013F /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4E62B28D3B40050013F /* ListCell.swift */; };
+		DA47A4E92B28D4F00050013F /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4E82B28D4F00050013F /* ListCellView.swift */; };
+		DA47A4EB2B28D9690050013F /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4EA2B28D9690050013F /* UITableView+Ext.swift */; };
+		DA47A4ED2B28DA5A0050013F /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4EC2B28DA5A0050013F /* ReusableViewProtocol.swift */; };
+		DA47A4F22B28EDDA0050013F /* ListViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4F12B28EDDA0050013F /* ListViewSpy.swift */; };
+		DA47A4F42B28EDF00050013F /* ListPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4F32B28EDF00050013F /* ListPresenterSpy.swift */; };
+		DA47A4F62B28EE050050013F /* ListViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4F52B28EE050050013F /* ListViewControllerSpy.swift */; };
+		DA47A4F82B28EE1B0050013F /* ListViewControllerDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4F72B28EE1B0050013F /* ListViewControllerDelegateSpy.swift */; };
+		DA47A4FA2B28F1230050013F /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4F92B28F1230050013F /* ListPresenterTests.swift */; };
+		DA47A4FC2B28F1EC0050013F /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4FB2B28F1EC0050013F /* ListViewControllerTests.swift */; };
+		DA47A4FE2B28F2C20050013F /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4FD2B28F2C20050013F /* ListViewTests.swift */; };
+		DA47A5002B28F6A60050013F /* ListCellViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A4FF2B28F6A60050013F /* ListCellViewTests.swift */; };
+		DA47A5022B29D0130050013F /* ListCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5012B29D0130050013F /* ListCellTests.swift */; };
+		DA47A5052B29D0D10050013F /* ListDataSourceDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47A5042B29D0D10050013F /* ListDataSourceDelegateTests.swift */; };
 		DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */; };
 		DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */; };
 		DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */; };
@@ -103,6 +122,25 @@
 		DA457FEC2B1FC055002D7982 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		DA457FEE2B1FC5CF002D7982 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
 		DA457FF12B1FC67D002D7982 /* HomeReadyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReadyViewModel.swift; sourceTree = "<group>"; };
+		DA47A4DA2B28AC940050013F /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		DA47A4DC2B28ACA50050013F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DA47A4DE2B28ACB40050013F /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		DA47A4E12B28ACD10050013F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DA47A4E42B28B3E70050013F /* ListDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceDelegate.swift; sourceTree = "<group>"; };
+		DA47A4E62B28D3B40050013F /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		DA47A4E82B28D4F00050013F /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		DA47A4EA2B28D9690050013F /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		DA47A4EC2B28DA5A0050013F /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		DA47A4F12B28EDDA0050013F /* ListViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewSpy.swift; sourceTree = "<group>"; };
+		DA47A4F32B28EDF00050013F /* ListPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterSpy.swift; sourceTree = "<group>"; };
+		DA47A4F52B28EE050050013F /* ListViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerSpy.swift; sourceTree = "<group>"; };
+		DA47A4F72B28EE1B0050013F /* ListViewControllerDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerDelegateSpy.swift; sourceTree = "<group>"; };
+		DA47A4F92B28F1230050013F /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		DA47A4FB2B28F1EC0050013F /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		DA47A4FD2B28F2C20050013F /* ListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
+		DA47A4FF2B28F6A60050013F /* ListCellViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewTests.swift; sourceTree = "<group>"; };
+		DA47A5012B29D0130050013F /* ListCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellTests.swift; sourceTree = "<group>"; };
+		DA47A5042B29D0D10050013F /* ListDataSourceDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceDelegateTests.swift; sourceTree = "<group>"; };
 		DA4CBB412B1BA15000734FE2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DA4CBB472B1BA36200734FE2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		DA4CBB492B1BA37200734FE2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +285,77 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DA47A4D92B28AC7B0050013F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A4E32B28B3CB0050013F /* DataSource */,
+				DA47A4E02B28ACB80050013F /* Views */,
+				DA47A4DA2B28AC940050013F /* ListPresenter.swift */,
+				DA47A4DC2B28ACA50050013F /* ListViewController.swift */,
+				DA47A4DE2B28ACB40050013F /* ListProtocols.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DA47A4E02B28ACB80050013F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A4E12B28ACD10050013F /* ListView.swift */,
+				DA47A4E62B28D3B40050013F /* ListCell.swift */,
+				DA47A4E82B28D4F00050013F /* ListCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA47A4E32B28B3CB0050013F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A4E42B28B3E70050013F /* ListDataSourceDelegate.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		DA47A4EE2B28ED490050013F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A5032B29D0A90050013F /* DataSource */,
+				DA47A4F02B28ED740050013F /* Double */,
+				DA47A4EF2B28ED650050013F /* Views */,
+				DA47A4F92B28F1230050013F /* ListPresenterTests.swift */,
+				DA47A4FB2B28F1EC0050013F /* ListViewControllerTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DA47A4EF2B28ED650050013F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A4FD2B28F2C20050013F /* ListViewTests.swift */,
+				DA47A4FF2B28F6A60050013F /* ListCellViewTests.swift */,
+				DA47A5012B29D0130050013F /* ListCellTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA47A4F02B28ED740050013F /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A4F12B28EDDA0050013F /* ListViewSpy.swift */,
+				DA47A4F32B28EDF00050013F /* ListPresenterSpy.swift */,
+				DA47A4F52B28EE050050013F /* ListViewControllerSpy.swift */,
+				DA47A4F72B28EE1B0050013F /* ListViewControllerDelegateSpy.swift */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		DA47A5032B29D0A90050013F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				DA47A5042B29D0D10050013F /* ListDataSourceDelegateTests.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		DA4CBB432B1BA2B600734FE2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +444,8 @@
 			isa = PBXGroup;
 			children = (
 				DA7EE6D32B1BF6E6007A1121 /* UIViewController+Ext.swift */,
+				DA47A4EA2B28D9690050013F /* UITableView+Ext.swift */,
+				DA47A4EC2B28DA5A0050013F /* ReusableViewProtocol.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -435,6 +546,7 @@
 		DAE020232B04133E00459943 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DA47A4D92B28AC7B0050013F /* List */,
 				DA4CBB462B1BA34700734FE2 /* Settings */,
 				DA4CBB432B1BA2B600734FE2 /* Home */,
 			);
@@ -458,6 +570,7 @@
 			children = (
 				DA457FEB2B1FBFFC002D7982 /* Models */,
 				DA457FDB2B1F78A3002D7982 /* Network */,
+				DA47A4EE2B28ED490050013F /* List */,
 				DA4CBB502B1BE8FF00734FE2 /* Settings */,
 				DA4CBB442B1BA2D800734FE2 /* Home */,
 				DAE0209D2B0435E200459943 /* Coordinator */,
@@ -621,8 +734,11 @@
 			files = (
 				DA7EE6D72B1E6903007A1121 /* NetworkProtocols.swift in Sources */,
 				DAE0200F2B0408F300459943 /* ViewController.swift in Sources */,
+				DA47A4DF2B28ACB40050013F /* ListProtocols.swift in Sources */,
 				DAE020202B0412CD00459943 /* MainCoordinator.swift in Sources */,
+				DA47A4DB2B28AC940050013F /* ListPresenter.swift in Sources */,
 				DA7EE6D42B1BF6E6007A1121 /* UIViewController+Ext.swift in Sources */,
+				DA47A4E92B28D4F00050013F /* ListCellView.swift in Sources */,
 				DA457FED2B1FC055002D7982 /* ApiError.swift in Sources */,
 				DA7EE6DD2B1F625A007A1121 /* JokesResponse.swift in Sources */,
 				DA7EE6E52B1F6543007A1121 /* Constants.swift in Sources */,
@@ -632,21 +748,27 @@
 				DAE020262B04139000459943 /* HomeView.swift in Sources */,
 				DAE0202C2B04143500459943 /* HomeProtocols.swift in Sources */,
 				DA3082FD2B20E87C00F5A4F6 /* HomeHeaderView.swift in Sources */,
+				DA47A4DD2B28ACA50050013F /* ListViewController.swift in Sources */,
 				DA457FD92B1F6B16002D7982 /* JokeRepository.swift in Sources */,
 				DA4CBB482B1BA36200734FE2 /* SettingsProtocols.swift in Sources */,
 				DA7EE6D92B1E6A7C007A1121 /* HttpMethod.swift in Sources */,
 				DAE0200D2B0408F300459943 /* SceneDelegate.swift in Sources */,
+				DA47A4E22B28ACD10050013F /* ListView.swift in Sources */,
 				DA4CBB4F2B1BA3AE00734FE2 /* SettingsView.swift in Sources */,
 				DA3083012B20F57000F5A4F6 /* HomeErrorView.swift in Sources */,
 				DA3082FF2B20F28F00F5A4F6 /* HomeLoadingView.swift in Sources */,
+				DA47A4EB2B28D9690050013F /* UITableView+Ext.swift in Sources */,
 				DA457FD72B1F69C1002D7982 /* JokeRepositoryType.swift in Sources */,
 				DA3083032B20F5D600F5A4F6 /* HomeReadyView.swift in Sources */,
 				DA4CBB4C2B1BA38100734FE2 /* SettingsPresenter.swift in Sources */,
+				DA47A4E52B28B3E70050013F /* ListDataSourceDelegate.swift in Sources */,
 				DAE020282B0413B400459943 /* HomeViewController.swift in Sources */,
 				DAE020222B0412EE00459943 /* CoordinatorProtocols.swift in Sources */,
 				DA7EE6DB2B1E6BCD007A1121 /* NetworkManager.swift in Sources */,
+				DA47A4ED2B28DA5A0050013F /* ReusableViewProtocol.swift in Sources */,
 				DAE0202A2B04140600459943 /* HomePresenter.swift in Sources */,
 				DA4CBB422B1BA15000734FE2 /* CoordinatorFactory.swift in Sources */,
+				DA47A4E72B28D3B40050013F /* ListCell.swift in Sources */,
 				DA4CBB4A2B1BA37200734FE2 /* SettingsViewController.swift in Sources */,
 				DA457FEF2B1FC5CF002D7982 /* HomeViewState.swift in Sources */,
 			);
@@ -661,28 +783,38 @@
 				DAE0209C2B04348C00459943 /* HomeViewControllerDelegateSpy.swift in Sources */,
 				DA7EE6CD2B1BEF85007A1121 /* Mirror+Ext.swift in Sources */,
 				DAE020902B04302500459943 /* MainCoordinatorTests.swift in Sources */,
+				DA47A4FA2B28F1230050013F /* ListPresenterTests.swift in Sources */,
 				DAE020922B04318500459943 /* HomeViewControllerSpy.swift in Sources */,
 				DA4CBB572B1BE98900734FE2 /* SettingsViewSpy.swift in Sources */,
+				DA47A4FC2B28F1EC0050013F /* ListViewControllerTests.swift in Sources */,
 				DAE0208E2B042FF900459943 /* ViewControllerMock.swift in Sources */,
 				DA4CBB532B1BE95200734FE2 /* SettingsViewControllerSpy.swift in Sources */,
+				DA47A4F22B28EDDA0050013F /* ListViewSpy.swift in Sources */,
+				DA47A5002B28F6A60050013F /* ListCellViewTests.swift in Sources */,
 				DA457FDF2B1F790B002D7982 /* NetworkProtocolMock.swift in Sources */,
+				DA47A4F42B28EDF00050013F /* ListPresenterSpy.swift in Sources */,
 				DA4CBB552B1BE97000734FE2 /* SettingsPresenterSpy.swift in Sources */,
 				DA457FE92B1FB984002D7982 /* JokeRepositoryMock.swift in Sources */,
 				DAE020982B04335F00459943 /* HomeViewSpy.swift in Sources */,
 				DA4CBB592B1BE9A700734FE2 /* SettingsViewControllerDelegateSpy.swift in Sources */,
+				DA47A5022B29D0130050013F /* ListCellTests.swift in Sources */,
+				DA47A4F82B28EE1B0050013F /* ListViewControllerDelegateSpy.swift in Sources */,
 				DA457FE12B1FA28E002D7982 /* JokeRepositoryTests.swift in Sources */,
 				DA30830E2B226B4200F5A4F6 /* HomeReadyViewTests.swift in Sources */,
 				DA457FE42B1FACBF002D7982 /* JokesResponse+Stub.swift in Sources */,
+				DA47A4FE2B28F2C20050013F /* ListViewTests.swift in Sources */,
 				DA3083052B20FF7A00F5A4F6 /* HomeReadyViewModel+Stub.swift in Sources */,
 				DAE0209A2B0433E500459943 /* HomePresenterSpy.swift in Sources */,
 				DA4CBB5C2B1BEAF300734FE2 /* SettingsViewTests.swift in Sources */,
 				DA7EE6D12B1BF5A1007A1121 /* SettingsViewControllerTests.swift in Sources */,
+				DA47A5052B29D0D10050013F /* ListDataSourceDelegateTests.swift in Sources */,
 				DA457FE72B1FB1FC002D7982 /* GetJokesServiceTests.swift in Sources */,
 				DAE020A02B04366100459943 /* HomeViewTests.swift in Sources */,
 				DA7EE6CF2B1BF53E007A1121 /* SettingsPresenterTests.swift in Sources */,
 				DAE020962B0432C000459943 /* HomeViewControllerTests.swift in Sources */,
 				DA30830A2B22697E00F5A4F6 /* HomeLoadingViewTests.swift in Sources */,
 				DA30830C2B226A8500F5A4F6 /* HomeErrorViewTests.swift in Sources */,
+				DA47A4F62B28EE050050013F /* ListViewControllerSpy.swift in Sources */,
 				DAE020942B0431F500459943 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
